@@ -1,0 +1,20 @@
+.certification-documents-area{
+    width: 350px;
+    background: #ff8da7;
+    padding: 10px;
+}
+
+.document-draggable-area {
+    border: 8px;
+    border-radius: 10px;
+}
+
+.document-container{
+    padding: 6px;
+    margin: 5px;
+    background: white;
+    box-shadow: 0px 3px 3px 0px gray;
+}
+.document {
+    width: 100%;
+}
