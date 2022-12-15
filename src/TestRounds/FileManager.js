@@ -23,7 +23,7 @@ const FileManager = () => {
           {documentsList.map((document, index) =>
             <div
               key={"document-container-" + document.documentId}
-              className="documents-container"
+              className="documents-container-wrapper"
             >
               <SortableRowContainer
                 key={'parent' + document.documentId}

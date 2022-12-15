@@ -76,7 +76,7 @@ const SortableRowContainer = ({document, id, index}) => {
   return (
 
     <div
-      className="document-container"
+      className="documents-container"
       ref={setNodeRef}
       id={`parent-doc-${document.documentId}`}
       style={style}
