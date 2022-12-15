@@ -1,6 +1,6 @@
 import {arrayMove as dndKitArrayMove} from "@dnd-kit/sortable";
 
-export const findDocumentIndex = (documentsList, id) => {
+export const findDocumentIndexByID = (documentsList, id) => {
   return documentsList.findIndex(doc => doc.documentId === +id);
 }
 
@@ -18,8 +18,8 @@ export const arrayMove = (array, oldIndex, newIndex) => {
 
 export const WRAPPER_TYPES = {
   DOCUMENS_WRAPPER: 'DocumentsWrapper',
-  LOWER_CHILDREN: 'lowerChildren',
-  UPPER_CHILDREN: 'upperChildren'
+  LOWER_CHILDREN: 'lower_children',
+  UPPER_CHILDREN: 'upper_children'
 
 }
 
@@ -27,7 +27,7 @@ export const initialList = [
   {
     documentId: 1,
     name: 'Luis',
-    upperChildren: [
+    upper_children: [
       {
         documentId: 4,
         name: 'Django',
@@ -45,7 +45,7 @@ export const initialList = [
   {
     documentId: 2,
     name: 'Diego',
-    lowerChildren: [
+    lower_children: [
       {
         documentId: 7,
         name: 'Django',
@@ -62,6 +62,34 @@ export const initialList = [
   },
   {
     documentId: 3,
-    name: 'Javier'
+    name: 'Javier',
+    upper_children: [
+      {
+        documentId: 10,
+        name: 'Django',
+      },
+      {
+        documentId: 11,
+        name: 'Python',
+      },
+      {
+        documentId: 12,
+        name: 'React',
+      }
+    ],
+    lower_children: [
+      {
+        documentId: 13,
+        name: 'Django',
+      },
+      {
+        documentId: 14,
+        name: 'Python',
+      },
+      {
+        documentId: 15,
+        name: 'React',
+      }
+    ]
   },
 ]
